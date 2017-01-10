@@ -1,0 +1,172 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: middile;
+	font-family:open sans;
+	
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+	font-family:open sans;
+	background: none repeat scroll 0 0 #e9eaee !important;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+strong {
+	font-weight:bold;
+}
+.title{
+color:red;
+}
+.centerWrapper, .header, .continer, .fotter, .socket {
+  height: auto;
+  margin: -20px auto !important;
+  max-width: 100%;
+  width: 100%;
+  overflow:hidden;
+}
+ul.pageInfo li{
+float:left;
+padding:4px;
+text-decoration:none;
+}
+ul.pageInfo li a{
+text-decoration:none;
+color:#333;
+font-size:15px;
+}
+ul.pageInfo li a:hover{
+text-decoration:underline;
+color:#000;
+font-size:16px;
+}
+.headerTop{
+background: none repeat scroll 0 0 #116762;
+    box-shadow: 0 0 5px #333;
+    height: 100px;
+   color:#fff;
+   text-align:center;
+   font-size:20px;
+    z-index: 800 !important;
+	margin:-15px auto;
+}
+.fotterMain{
+background:#b9e4ed;
+height:200px;
+ color:#fff;
+   text-align:center;
+   font-size:20px;
+}
+.socketMain{
+background:#333;
+height:40px;
+ color:#fff;
+   text-align:center;
+   font-size:20px;
+}
+.col-md-12 .headername{
+background-color: #116762;
+box-shadow: 0 0 5px #333;
+
+}
+.logo-default .logo {
+  height: 44px;
+  width: 185px;
+}
+.form-control .inputboder{
+ border:1px solid #333;
+}
+.navmenu{
+color:#fff;
+font-weight:bold;
+}
+.nav > li > a:focus, .nav > li > a.navmenu:hover {
+    background-color: #116762;
+    text-decoration: none;
+	color:#fff;
+}
+.navbar-nav > li > a.navmenu {
+  line-height: 1;
+  padding-bottom: 2px;
+  padding-top: 7px;
+}
+.dropdown-menuUser{
+	display:none;
+}
+.navbar-nav > li .classic-menu-dropdown > a.navmenu :hover, .dropdown-menuUser{
+display:block;
+}
+.form-control {
+
+  border: 1px solid #ccc !important;
+  
+}
+.submit{
+background:#116762 !important;
+}
+h1.connect{
+  color: #116762;
+  text-shadow: 1px 1px #a9b9bc;
+}
+.headerSing {
+  color: #116762;
+  font-family: arial;
+  font-size: 20pt;
+  font-weight: bold;
+}
+.logfooter {
+  font-family: Arial,Helvetica,sans-serif;
+  font-size: 80%;
+  letter-spacing: 2px;
+  text-align: center;
+  width: 100%;
+}
+.navbar-brand {
+  float: left;
+  font-size: 18px;
+  height: 31px !important;
+  line-height: 20px;
+  padding: 0px;
+  color:#333 !important;
+}
+.userPhoto{
+width:35px;height:35px;border-radius:100px;
+}
+.titlea {
+  margin-bottom: -10px !important;
+  margin-top: -7px !important;
+}
+#searchIcon {
+  background: none repeat scroll 0 0 #666666;
+  border-radius: 0 2px 2px 0;
+  color: #fff;
+  padding: 10px;
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  z-index: 200;
+}
+
+.navbar-nav > li > a {
+   padding-bottom: 0 !important;
+  padding-top: 4px !important;
+}
