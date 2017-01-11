@@ -7,7 +7,8 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2015 - 2016, Next IT Solution by Golap Hazi
+ * Copyright (c) 2015 - 2016, Next IT Solutions by Golap Hazi - golaphazi@gmail.com
+ * skype and facebook: golap.hazi
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,8 +30,10 @@
  *
  * @package	Next Framework
  * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2015 - 2016, Next IT Solution by Golap Hazi(golap.smlmhs.edu.bd)
- * @copyright	Copyright (c) 2015 - 2016, Next IT Solution by Golap Hazi
+ * @copyright	Copyright (c) 2015 - 2016, Next IT Solutions by Golap Hazi - golaphazi@gmail.com
+ * skype and facebook: golap.hazi(golap.smlmhs.edu.bd)
+ * @copyright	Copyright (c) 2015 - 2016, Next IT Solutions by Golap Hazi - golaphazi@gmail.com
+ * skype and facebook: golap.hazi
  * 
  * @since	Version 2.0.0
  * @ V2
@@ -165,21 +168,21 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 				$folder ='';
 			}
 			$pages 	= $this->app_url."application/model/".$folder.$page.".php";
-				if(file_exists($pages)){
-						$fh 			= fopen($pages, 'r');
-						ftruncate($fh,100);
-						clearstatcache();
-						require_once($pages);
-						$class = ucfirst($page);
-						if(class_exists($class)){
-							return new $class;
-						}else{
-							show_error('Sorry Not Found "'.$class.'" Class'); 
-						}
-					
-				}else{
-				  show_error('Sorry Not Found '.$pages.'.php page');
-				}
+			if(file_exists($pages)){
+					$fh 			= fopen($pages, 'r');
+					ftruncate($fh,100);
+					clearstatcache();
+					require_once($pages);
+					$class = ucfirst($page);
+					if(class_exists($class)){
+						return new $class;
+					}else{
+						show_error('Sorry Not Found "'.$class.'" Class'); 
+					}
+				
+			}else{
+			  show_error('Sorry Not Found '.$pages.' page');
+			}
 				
 		}
 		
@@ -270,7 +273,6 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		}
 	#---------------------- loder 
 	public function loader(){
-			//$dataw = '<img src="'.$this->host().'/images/preloader2.gif" width="60px" height="50px" id="loader"><script>$(document).ready(function(){$("#loader1").hide(2000)})</script>';
 			$dataw = '<img src="'.$this->host().'/images/preloader2.gif" width="60px" height="50px">';
 			return $dataw;
 		}
@@ -371,18 +373,6 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		}
 		return $data;
 	}
-	/*
-	public function get_data($getData, $getValue=''){
-		if(is_array($getValue) AND strlen($getValue[0])>0){
-			
-			foreach($getValue AS $key=>$value){
-			  $$value = $getData[$key];
-			}
-		}else{
-		
-		}
-	}
-	*/
 	
   }
 ?>
