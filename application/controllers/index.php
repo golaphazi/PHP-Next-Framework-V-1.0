@@ -1,6 +1,6 @@
 <?php
 	class Index Extends NX_Base {
-		private $product, $report, $action, $action1, $input, $user;
+		private $product;
 	
 		function __construct(){
 			$this->con		= $this->NX_Base();
@@ -9,17 +9,11 @@
 		
 		
 		public function index(){
-			$this->session->setSession('H0w are u','userID2');
 			$data = array();
-			$data['home'] = 'golap hazi';
-			$data['home1'] = 'golap hazi home';
-			$data['home2'] = 'golap hazi home mostafa mia golap ';
-			$data['array'] = array('golap', 'mostafa', 'hazi');
+			$data['home'] = 'WelCome Next Framework...........';
+			
 			$this->view('index', $data);
 		}
-		function golap(){
-			$data = 'report golap';
-		return $data;
-		}
+		
 	}
 ?>
