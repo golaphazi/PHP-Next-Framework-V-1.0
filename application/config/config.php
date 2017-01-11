@@ -15,9 +15,7 @@ Class NX_Controllers{
 	public function url(){
 		$deifne = array(
 						'homew'=>'/report/golap/',
-						'home1'=>'tts/ff/reportr/',
-					
-					);
+					   );
 	return $deifne;
 	}
 	
@@ -30,10 +28,7 @@ Class NX_Controllers{
 	
 	public function create_url(){
 		/*$geturl = array('table name' => array('filed name','controller','method','folder name'),);*/
-		$geturl = array(
-							's_people' => array('p_login_id','Golap','name','report'),
-							
-						);
+		$geturl = array('s_people' => array('p_login_id','Golap','name','report'));
 		return $geturl;
 	}
 }

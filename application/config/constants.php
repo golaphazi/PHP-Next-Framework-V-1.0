@@ -41,14 +41,14 @@
 define("LOCALHOST","localhost");
 define("USER_NAME","root");
 define("USER_PASSWORD","");
-define("DB_NAME","young_db1");
+define("DB_NAME","");
 
 #--------- use database status-------------#
 
-define("DB_STATUS","Yes");  // Yes/No  ******* use database......
+define("DB_STATUS","No");  // Yes/No  ******* use database......
 
 #-----------use create url compare with database table . ..... plase sattus "Yes" and selected your table and filed to config.php page - function create_url();
-define("DB_CREATE","Yes");  // Yes/No
+define("DB_CREATE","No");  // Yes/No
 
 #---------- sql formet ----------------# 
 /* Example : mysql , mysqli, pdo ------sql format*/
@@ -56,7 +56,7 @@ define("DB_DRIVER", "pdo");
 
 #--------- server setup
 #add base url folder ## example www.domine.com/folder then index.php show
-define("BASE","/test"); 
+define("BASE",""); 
 #------------- Base Url
 
 
