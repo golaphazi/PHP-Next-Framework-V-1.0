@@ -264,7 +264,7 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		}
 		public function keyword($icon){
 			if(strlen($icon)>0){
-				$this->sett = $this->coreFunction('setting');
+				$this->sett = $this->coreFunction('NX_Setting');
 				$title = $this->tagCheck($icon);
 			}else{
 				$title = DISCRIPTION;
