@@ -7,7 +7,8 @@
  *
  * This content is released under the MIT License (MIT)
  *
- * Copyright (c) 2015 - 2016, Next IT Solution by Golap Hazi
+ * Copyright (c) 2015 - 2016, Next IT Solutions by Golap Hazi - golaphazi@gmail.com
+ * skype and facebook: golap.hazi
  *
  * Permission is hereby granted, free of charge, to any person obtaining a copy
  * of this software and associated documentation files (the "Software"), to deal
@@ -29,8 +30,10 @@
  *
  * @package	Next Framework
  * @author	EllisLab Dev Team
- * @copyright	Copyright (c) 2015 - 2016, Next IT Solution by Golap Hazi(golap.smlmhs.edu.bd)
- * @copyright	Copyright (c) 2015 - 2016, Next IT Solution by Golap Hazi
+ * @copyright	Copyright (c) 2015 - 2016, Next IT Solutions by Golap Hazi - golaphazi@gmail.com
+ * skype and facebook: golap.hazi(golap.smlmhs.edu.bd)
+ * @copyright	Copyright (c) 2015 - 2016, Next IT Solutions by Golap Hazi - golaphazi@gmail.com
+ * skype and facebook: golap.hazi
  * 
  * @since	Version 2.0.0
  * @ V2
