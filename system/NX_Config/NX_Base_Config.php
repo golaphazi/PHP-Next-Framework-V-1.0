@@ -216,7 +216,9 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 			}
 				
 		}
-		
+		public function tagCheck($data){
+			return strip_tags($data);
+		}
 		public function coreFunction($function){
 			$function = ucfirst($function);
 			$data = new $function;
@@ -230,7 +232,7 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		}
 		public function title($value){
 			if(strlen($value)>0){
-				$title = $this->realData($value);
+				$title = $this->tagCheck($value);
 			}else{
 				$title = TITLE;
 			}
@@ -240,7 +242,7 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		}
 		public function fevicon($icon){
 			if(strlen($icon)>0){
-				$title = $this->realData($icon);
+				$title = $this->tagCheck($icon);
 			}else{
 				$title = SHORTICON;
 			}
@@ -251,7 +253,7 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		public function discription($icon,$type=""){
 			if(strlen($icon)>0){
 				$this->sett = $this->coreFunction('NX_Setting');
-				$title = $this->realData($icon);
+				$title = $this->tagCheck($icon);
 				$title  = $this->sett->discriptionData($title,$type);
 			}else{
 				$title = DISCRIPTION;
@@ -263,7 +265,7 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 		public function keyword($icon){
 			if(strlen($icon)>0){
 				$this->sett = $this->coreFunction('setting');
-				$title = $this->realData($icon);
+				$title = $this->tagCheck($icon);
 			}else{
 				$title = DISCRIPTION;
 			}
@@ -293,10 +295,10 @@ Class NX_BaseConfig Extends NX_QueryConfig{
 			return $dataw;
 		}
 	public function BaseConfig() {
-			if(DB_STATUS == 'Yes'){			
-				$this->connection();
-			}
+		if(DB_STATUS == 'Yes'){			
+			$this->connection();
 		}
+	}
 	#------------------ time NX_Setting ----------------------#
 	public function getTime(){
 		return time();
